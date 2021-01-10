@@ -11,7 +11,6 @@ In the main part of the repository:
 * Module2-Final-Project.pdf contains the slide presentation explaining the project and analysis
 * CONTRIBUTING contains information for contributing to The Flatiron School's respositories
 * LICENSE contains the licensing information for The Flatiron School's materials
-* orig-README.md lists the specifications from The Flatiron School for this project
 
 In the "files" folder, there are seven .CSV files of data that can be read into the Jupyter notebook to review analysis for each hypothesis without starting from the beginning with the Northwind_small.sqlite file.
 
