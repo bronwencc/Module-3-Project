@@ -4,6 +4,9 @@ For the Flatiron Data Science course's Module 3 Project, I analyzed a provided s
 
 This repository contains the dataset itself, a diagram of the tables with variable names, presentation slides and a Jupyter notebook of the analysis.
 
+The schema of the dataset is as follows:
+![Diagram of the Northwind dataset's SQL tables](https://raw.githubusercontent.com/bronwencc/Module-3-Project/master/Northwind_ERD.png)
+
 In the main part of the repository:
 
 * [student.ipynb](https://github.com/bronwencc/Module-3-Project/blob/master/student.ipynb) is the Jupyter notebook containing code that tests four hypotheses
@@ -15,3 +18,4 @@ In the main part of the repository:
 In the "files" folder, there are seven .CSV files of data that can be read into the Jupyter notebook to review analysis for each hypothesis without starting from the beginning with the Northwind_small.sqlite file.
 
 In the "graphs" folder, there are five .PNG files with charts comparing differences that were tested in hypotheses.
+
