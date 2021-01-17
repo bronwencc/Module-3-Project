@@ -2,9 +2,9 @@
 
 For the Flatiron Data Science course's Module 3 Project, I analyzed a provided subset of the Northwind Database.
 
-This repository contains the dataset itself, a diagram of the tables with variable names, presentation slides and a Jupyter notebook of the analysis.
+This repository contains the dataset itself, a PNG file of the diagram schema of the tables in the dataset, presentation slides and a Jupyter notebook of the analysis.
 
-The schema of the dataset is as follows:
+The PNG schema of the dataset is as follows:
 ![Diagram of the Northwind dataset's SQL tables](https://raw.githubusercontent.com/bronwencc/Module-3-Project/master/Northwind_ERD.png)
 
 In the main part of the repository:
