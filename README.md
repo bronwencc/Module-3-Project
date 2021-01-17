@@ -6,9 +6,9 @@ This repository contains the dataset itself, a diagram of the tables with variab
 
 In the main part of the repository:
 
-* student.ipynb is the Jupyter notebook containing code that tests four hypotheses
+* [student.ipynb](https://github.com/bronwencc/Module-3-Project/blob/master/student.ipynb) is the Jupyter notebook containing code that tests four hypotheses
 * Northwind_small.sqlite is the dataset provided by Flatiron for this analysis
-* Module2-Final-Project.pdf contains the slide presentation explaining the project and analysis
+* [Module2-Final-Project.pdf](https://github.com/bronwencc/Module-3-Project/blob/master/Module2-Final-Project.pdf) contains the slide presentation explaining the project and analysis
 * CONTRIBUTING contains information for contributing to The Flatiron School's respositories
 * LICENSE contains the licensing information for The Flatiron School's materials
 
