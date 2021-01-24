@@ -8,7 +8,7 @@ I was assigned one hypothesis to test, and created and tested three others for s
 1. If a product had a discount, it was ordered in a significantly larger quantity. The size of the discount did not significantly affect how much was ordered.
 2. When comparing freight costs during meteorological winter to freight costs during the rest of the year, there was no significant difference.
 3. When comparing freight costs for the three different shipping companies, two (#2 and #3) were not significantly different from each other and both were significantly different from the other company (#1). In the dataset, the higher freight costs were with companies #2 and #3.
-4. The total amount paid for an order is varies very little when the products contained therein are out of stock or discontinued.
+4. The total amount paid for an order varies very little when the products contained therein are out of stock or discontinued.
 
 The PNG schema of the dataset is as follows:
 ![Diagram of the Northwind dataset's SQL tables](https://raw.githubusercontent.com/bronwencc/Module-3-Project/master/Northwind_ERD.png)
@@ -21,6 +21,6 @@ In the main part of the repository:
 * CONTRIBUTING contains information for contributing to The Flatiron School's respositories
 * LICENSE contains the licensing information for The Flatiron School's materials
 
-In the "files" folder, there are seven .CSV files of data that can be read into the Jupyter notebook to review analysis for each hypothesis without starting from the beginning with the Northwind_small.sqlite file.
+In the ["files" folder](https://github.com/bronwencc/Module-3-Project/tree/master/files), there are seven .CSV files of data that can be read into the Jupyter notebook to review analysis for each hypothesis without starting from the beginning with the Northwind_small.sqlite file.
 
-In the "graphs" folder, there are five .PNG files with charts comparing differences that were tested in hypotheses.
+In the ["graphs" folder](https://github.com/bronwencc/Module-3-Project/tree/master/graphs), there are five .PNG files with charts comparing differences that were tested in hypotheses.
