@@ -1,8 +1,8 @@
 # Module 3 Final Project
 
-For the Flatiron Data Science course's Module 3 (formerly Module 2) Project, I analyzed a provided subset of the Northwind Database.
+## Summary
 
-This repository contains the dataset itself, a PNG file of the diagram schema of the tables in the dataset, presentation slides and a Jupyter notebook of the analysis. The notebook uses SQL queries to access the data tables and then Pandas dataframes to test hypotheses. It saves transformed data along the way in CSV files, such as after feature engineering, so they can be accessed to conduct analysis at certain points without starting over completely from the beginning.
+For the Flatiron Data Science course's Module 3 (formerly Module 2) Project, I analyzed a provided subset of the Northwind Database.
 
 I was assigned one hypothesis to test, and created and tested three others for significance. The four hypotheses and their conclusions are as follows:
 1. If a product had a discount, it was ordered in a significantly larger quantity. The size of the discount did not significantly affect how much was ordered.
@@ -13,8 +13,20 @@ I was assigned one hypothesis to test, and created and tested three others for s
 The PNG schema of the dataset is as follows:
 ![Diagram of the Northwind dataset's SQL tables](https://raw.githubusercontent.com/bronwencc/Module-3-Project/master/Northwind_ERD.png)
 
-In the main part of the repository:
 
+### Hypothesis 1:
+
+First, I use SQL to get the table OrderDetail, put it into a Pandas dataframe `ordDetdf` and save it in files/OrderDetail.csv. 
+
+Null hypothesis: discounted has a lower or the same mean as nodiscount
+$H_0$: $Quantity_d$ $\le$ $Quantity_f$ ($d$ is discounted, $f$ is full price)
+
+Alternative hypothesis: discounted has a higher mean than nodiscount
+$H_1$: $Quantity_d$ $\gt$ $Quantity_f$
+
+##Repository Contents:
+
+This repository contains the dataset itself, a PNG file of the diagram schema of the tables in the dataset, presentation slides and a Jupyter notebook of the analysis. The notebook uses SQL queries to access the data tables and then Pandas dataframes to test hypotheses. It saves transformed data along the way in CSV files, such as after feature engineering, so they can be accessed to conduct analysis at certain points without starting over completely from the beginning.
 * [student.ipynb](https://github.com/bronwencc/Module-3-Project/blob/master/student.ipynb) is the Jupyter notebook containing code that tests four hypotheses
 * Northwind_small.sqlite is the dataset provided by Flatiron for this analysis
 * [Module2-Final-Project.pdf](https://github.com/bronwencc/Module-3-Project/blob/master/Module2-Final-Project.pdf) contains the slide presentation explaining the project and analysis
