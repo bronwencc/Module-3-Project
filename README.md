@@ -16,13 +16,17 @@ The PNG schema of the dataset is as follows:
 
 ### Hypothesis 1:
 
-First, I use SQL to get the table OrderDetail, put it into a Pandas dataframe `ordDetdf` and save it in files/OrderDetail.csv. 
+First, I use SQL to get the table OrderDetail, put it into a Pandas dataframe `ordDetdf` and save it in files/OrderDetail.csv.
 
-Null hypothesis: discounted has a lower or the same mean as nodiscount
-$H_0$: $Quantity_d$ $\le$ $Quantity_f$ ($d$ is discounted, $f$ is full price)
+Null hypothesis: discounted `Quantity` has a lower or the same mean as nodiscount `Quantity`
 
-Alternative hypothesis: discounted has a higher mean than nodiscount
-$H_1$: $Quantity_d$ $\gt$ $Quantity_f$
+Alternative hypothesis: discounted `Quantity` has a higher mean than nodiscount `Quantity`
+
+The Discount column (possible values 0, 0.05, 0.1, 0.15, 0.2, 0.25) is converted to dummy columns and added to a new dataframe `disc_df` saved in files/DiscountDummies.csv.
+
+The `Quantity` values are not normally distributed according to a histogram, Seaborn `distplot`, Scipy `kstest`, and statsmodels `qqplot`. To calculate effect size with Cohen's d, it needs to be in a normal distribution. I wrote a resample/bootstrap function to get normally distributed lists of sample means and use `scipy.stats.norm.rvs` to get a random sample of the normal continuous random variable.
+
+I wrote Welch's t test, one-tail t test, and effective degrees of freedom functions to calculate the p-value comparing discounted and non-discounted quantity values, which was 5e-11. This is less than 0.05 so there is a significant difference and therefore the discounted mean for `Quantity` is higher.
 
 ##Repository Contents:
 
