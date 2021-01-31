@@ -28,7 +28,19 @@ The `Quantity` values are not normally distributed according to a histogram, Sea
 
 I wrote Welch's t test, one-tail t test, and effective degrees of freedom functions to calculate the p-value comparing discounted and non-discounted quantity values, which was 5e-11. This is less than 0.05 so there is a significant difference and therefore the discounted mean for `Quantity` is higher.
 
-##Repository Contents:
+Then, I wrote a function `Cohen_d` to figure out the magnitude of the difference between two groups. It found a large effect size between discounted and non-discounted samples.
+
+For the different levels of discount (5, 10, 15, 20, 25), I did pairwise t tests with `stats.ttest_ind` to check for significance. No p-values were less than 0.05 so I concluded there was no significant difference between the possible values for discounts. 
+
+
+### Hypothesis 2:
+
+
+### Hypothesis 3:
+
+### Hypothesis 4:
+
+## Repository Contents:
 
 This repository contains the dataset itself, a PNG file of the diagram schema of the tables in the dataset, presentation slides and a Jupyter notebook of the analysis. The notebook uses SQL queries to access the data tables and then Pandas dataframes to test hypotheses. It saves transformed data along the way in CSV files, such as after feature engineering, so they can be accessed to conduct analysis at certain points without starting over completely from the beginning.
 * [student.ipynb](https://github.com/bronwencc/Module-3-Project/blob/master/student.ipynb) is the Jupyter notebook containing code that tests four hypotheses
