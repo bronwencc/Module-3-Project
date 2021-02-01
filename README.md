@@ -35,15 +35,15 @@ For the different levels of discount (5, 10, 15, 20, 25), I did pairwise t tests
 
 ### Hypothesis 2:
 
-Null hypothesis: freight costs in winter have a mean that is the same or lower as freight costs during the rest of the year
+Null hypothesis: Freight costs in winter have a mean that is the same or lower as freight costs during the rest of the year.
 
-Alternative hypothesis: the mean freight costs in winter are higher than freight costs during the rest of the year
+Alternative hypothesis: The mean freight costs in winter are higher than freight costs during the rest of the year.
 
 ### Hypothesis 3:
 
-Null hypothesis:
+Null hypothesis: The mean cost of freight is not different depending on the three different companies.
 
-Alternative hypothesis:
+Alternative hypothesis: One or two of the three companies' mean freight costs are higher or lower than the other(s).
 
 ### Hypothesis 4:
 
