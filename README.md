@@ -39,6 +39,10 @@ Null hypothesis: Freight costs in winter have a mean that is the same or lower a
 
 Alternative hypothesis: The mean freight costs in winter are higher than freight costs during the rest of the year.
 
+Using SQL, I selected certain columns from the Order table, after renaming it to "Orders", and saved that information in a dataframe `ordersdf` and as the Orders.csv file. After looking at the `ShipRegion` column, I added a new column `Hemisphere` to indicate whether the order was shipped in the Northern or Southern Hemisphere. I wrote a function to make this determination based on the `ShippedDate` and `ShipRegion` and mapped it with a list comprehension to create the `Season` column. I used meteorological seasons rather than astronomical; so winter in the Northern Hemisphere was from December 1 to the end of February and in the Southern Hemisphere from June 1 to August 31.
+
+I created a new dataframe `shipdf` with Freight, Season and ShipVia (categorical variable of shipping company) columns and saved the dataframe as Ship.csv. I then split Freight into two lists, one each for winter and the rest of the year. When looking at histograms, there were a lot of 
+
 ### Hypothesis 3:
 
 Null hypothesis: The mean cost of freight is not different depending on the three different companies.
