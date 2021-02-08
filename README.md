@@ -10,9 +10,10 @@ I was assigned one hypothesis to test, and created and tested three others for s
 3. When comparing freight costs for the three different shipping companies, two (#2 and #3) were not significantly different from each other and both were significantly different from the other company (#1). In the dataset, the higher freight costs were with companies #2 and #3.
 4. The total amount paid for an order varies very little when the products contained therein are out of stock or discontinued.
 
-The PNG schema of the dataset is as follows:
+The PNG schema of the dataset:
 ![Diagram of the Northwind dataset's SQL tables](https://raw.githubusercontent.com/bronwencc/Module-3-Project/master/Northwind_ERD.png)
 
+The definition, selection, normalization, analysis and testing for each hypothesis are below.
 
 ### Hypothesis 1:
 
@@ -41,9 +42,11 @@ Alternative hypothesis: The mean freight costs in winter are higher than freight
 
 Using SQL, I selected certain columns from the Order table, after renaming it to "Orders", and saved that information in a dataframe `ordersdf` and as the Orders.csv file. After looking at the `ShipRegion` column, I added a new column `Hemisphere` to indicate whether the order was shipped in the Northern or Southern Hemisphere. I wrote a function to make this determination based on the `ShippedDate` and `ShipRegion` and mapped it with a list comprehension to create the `Season` column. I used meteorological seasons rather than astronomical; so winter in the Northern Hemisphere was from December 1 to the end of February and in the Southern Hemisphere from June 1 to August 31.
 
-I created a new dataframe `shipdf` with Freight, Season and ShipVia (categorical variable of shipping company) columns and saved the dataframe as Ship.csv. I then split Freight into two lists, one each for winter and the rest of the year. When looking at histograms, most values were under 200. As such, I normalized the two lists of Freight values by takimg the logarithms of all of them.
+I created a new dataframe `shipdf` with Freight, Season and ShipVia (categorical variable of shipping company) columns and saved the dataframe as Ship.csv. I then split Freight into two lists, one each for winter and the rest of the year. When looking at histograms, most values were under 200. As such, I normalized the two lists of Freight values by taking their logarithms. A Kolmogorov-Smirnov test from `scipy.stats.kstest` confirmed the resulting distributions were near normal.
 
-The values need to be normalized before being compared with Cohen's d.
+I saved the log-transformed lists as logWinter.csv and logNotWint.csv to be read in with `csv.reader` if resuming the project at that point.
+
+The one-tailed Welch's t test using the function I created returned a p-value of 0.08, which is higher than 0.05 and so the null hypothesis cannot be rejected. Therefore, there is no significant difference between freight costs when shipping in winter compared to other seasons.
 
 ### Hypothesis 3:
 
