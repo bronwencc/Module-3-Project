@@ -54,9 +54,11 @@ Null hypothesis: The mean cost of freight is not different depending on the thre
 
 Alternative hypothesis: One or two of the three companies' mean freight costs are higher or lower than the other(s).
 
-I used some of the same information I had selected from the database for the previous hypothesis; namely, the Freight and ShipVia columns. The database also contained the names of the companies that corresponded to the numbers in the ShipVia column.
+I used some of the same information I had selected from the database for the previous hypothesis; namely, the `Freight` and `ShipVia` columns. The database also contained the names of the companies that corresponded to the numbers in the `ShipVia` column.
 
 I first compared all three companies' freight costs to each other and found two of the three companies to have little difference between them. I then combined their freight costs into the same list and compared, with an appropriately-scaled histogram, to the other shipping company's freight costs.
+
+![Histogram using opacity to show overlap between company freight costs](https://raw.githubusercontent.com/bronwencc/Module-3-Project/master/graphs/compShipvia.png)
 
 ### Hypothesis 4:
 
