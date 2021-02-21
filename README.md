@@ -62,13 +62,13 @@ I first compared all three companies' freight costs to each other and found two 
 
 The differences appear in freight costs at the upper end of the prices, where companies #2 and #3 are, but not company #1.
 
-For Northwind, I suggested looking into whether company #1 coupd be used instead, or whether companies #2 and #3 are already the best deals.
+For Northwind, I suggested looking into whether company #1 could be used instead, or whether companies #2 and #3 were already the best deals.
 
 ### Hypothesis 4:
 
-Null hypothesis:
+Null hypothesis: Orders with at least one item out-of-stock and/or discontinued cost the same as orders without such an item.
 
-Alternative hypothesis:
+Alternative hypothesis: Orders have a higher or lower total cost when at least one item in an order is out-of-stock and/or discontinued.
 
 
 ## Repository Contents:
