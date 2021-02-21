@@ -60,6 +60,10 @@ I first compared all three companies' freight costs to each other and found two 
 
 ![Histogram using opacity to show overlap between company freight costs](https://raw.githubusercontent.com/bronwencc/Module-3-Project/master/graphs/compShipvia.png)
 
+The differences appear in freight costs at the upper end of the prices, where companies #2 and #3 are, but not company #1.
+
+For Northwind, I suggested looking into whether company #1 coupd be used instead, or whether companies #2 and #3 are already the best deals.
+
 ### Hypothesis 4:
 
 Null hypothesis:
