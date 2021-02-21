@@ -70,6 +70,9 @@ Null hypothesis: Orders with at least one item out-of-stock and/or discontinued 
 
 Alternative hypothesis: Orders have a higher or lower total cost when at least one item in an order is out-of-stock and/or discontinued.
 
+The plot below shows most are around the same price, with the exceptions being around item prices 100 and 125 (all discontinued and/or out-of-stock items) and 150 to 260 (a scattering of in-stock items).
+
+![Plot with transparent dots comparing In Stock to Out-of-Stock or Discontinued items by price (including any discounts) and quantity ordered](https://raw.githubusercontent.com/bronwencc/Module-3-Project/master/graphs/outofstock.png)
 
 ## Repository Contents:
 
