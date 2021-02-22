@@ -66,9 +66,9 @@ For Northwind, I suggested looking into whether company #1 could be used instead
 
 ### Hypothesis 4:
 
-#### Null hypothesis: Orders with at least one item out-of-stock and/or discontinued cost the same as orders without such an item.
+#### Null hypothesis: The average total cost of orders containing an item that is out of stock and/or discontinued is the same as or greater than orders that do not.
 
-#### Alternative hypothesis: Orders have a higher or lower total cost when at least one item in an order is out-of-stock and/or discontinued.
+#### Alternative hypothesis: Orders for products that are out of stock or have been discontinued have lower totals than those that are not out of stock and/or discontinued.
 
 The plot below shows most are around the same price, with the exceptions being around item prices 100 and 125 (all discontinued and/or out-of-stock items) and 150 to 260 (a scattering of in-stock items).
 
