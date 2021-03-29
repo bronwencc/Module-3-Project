@@ -70,6 +70,8 @@ For Northwind, I suggested looking into whether company #1 could be used instead
 
 #### Alternative hypothesis: Orders for products that are out of stock or have been discontinued have lower totals than those that are not out of stock and/or discontinued.
 
+I selected orders that had items that were out of stock or discontinued. These were two different variables and there was some overlap.
+
 The plot below shows most are around the same price, with the exceptions being around item prices 100 and 125 (all discontinued and/or out-of-stock items) and 150 to 260 (a scattering of in-stock items).
 
 ![Plot with transparent dots comparing In Stock to Out-of-Stock or Discontinued items by price (including any discounts) and quantity ordered](https://raw.githubusercontent.com/bronwencc/Module-3-Project/master/graphs/outofstock.png)
